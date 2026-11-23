@@ -297,10 +297,12 @@ body.lock{overflow:hidden}
     <a href="#itinerary" data-t="itinerary"><span>02</span>3박 4일 일정</a>
     <a href="#stay" data-t="stay"><span>03</span>숙소 · 교통</a>
     <a href="#birthday" data-t="birthday"><span>04</span>생일 · 식당 · 선물</a>
-    <a href="#shopping" data-t="shopping"><span>05</span>쇼핑 · 면세</a>
-    <a href="#spots" data-t="spots"><span>06</span>러닝 · 스팟</a>
+    <a href="#food" data-t="food"><span>05</span>카페 · 식당</a>
+    <a href="#select" data-t="select"><span>06</span>소품 · 편집샵</a>
+    <a href="#shopping" data-t="shopping"><span>07</span>쇼핑 · 면세</a>
+    <a href="#spots" data-t="spots"><span>08</span>러닝 · 스팟</a>
   </nav>
-  <div class="side-foot">화면 갱신 2026-11-23<br>여행 기록에서 확인된 내용만 담았습니다.</div>
+  <div class="side-foot">화면 갱신 2026-11-24<br>여행 기록에서 확인된 내용만 담았습니다.</div>
 </aside>
 
 <header class="hero">
@@ -323,6 +325,8 @@ body.lock{overflow:hidden}
     <button class="tab" role="tab" aria-selected="false" data-t="itinerary">일정</button>
     <button class="tab" role="tab" aria-selected="false" data-t="stay">숙소·교통</button>
     <button class="tab" role="tab" aria-selected="false" data-t="birthday">생일</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="food">카페·식당</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="select">소품·편집샵</button>
     <button class="tab" role="tab" aria-selected="false" data-t="shopping">쇼핑·면세</button>
     <button class="tab" role="tab" aria-selected="false" data-t="spots">러닝·스팟</button>
   </div>
@@ -332,7 +336,7 @@ body.lock{overflow:hidden}
 
 <!-- ================= 1. 한눈에 ================= -->
 <section class="panel on" id="overview" role="tabpanel">
-  <div class="sec-head"><h2>한눈에 보기</h2><span>01 / 06</span></div>
+  <div class="sec-head"><h2>한눈에 보기</h2><span>01 / 08</span></div>
 
   <div class="stats">
     <div class="stat"><b>3</b><span>확정</span></div>
@@ -455,7 +459,7 @@ body.lock{overflow:hidden}
 
 <!-- ================= 2. 일정 ================= -->
 <section class="panel" id="itinerary" role="tabpanel">
-  <div class="sec-head"><h2>3박 4일 동선</h2><span>02 / 06</span></div>
+  <div class="sec-head"><h2>3박 4일 동선</h2><span>02 / 08</span></div>
   <div class="chips" data-chips data-for="#dayList .day">
     <button class="chipbtn on" data-f="all">전체</button>
     <button class="chipbtn" data-f="1">DAY 1 · 12/24</button>
@@ -547,7 +551,7 @@ body.lock{overflow:hidden}
 
 <!-- ================= 3. 숙소·교통 ================= -->
 <section class="panel" id="stay" role="tabpanel">
-  <div class="sec-head"><h2>숙소 · 교통</h2><span>03 / 06</span></div>
+  <div class="sec-head"><h2>숙소 · 교통</h2><span>03 / 08</span></div>
 
   <div class="card" id="hotel">
     <div class="top"><h3 class="title"><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=JR%E6%9D%B1%E6%97%A5%E6%9C%AC%E3%83%9B%E3%83%86%E3%83%AB%E3%83%A1%E3%83%83%E3%83%84%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B73-29-17" target="_blank" rel="noopener" title="구글 지도에서 열기">JR East Hotel Mets Shibuya</a></h3><span class="pill green">3박 확정</span></div>
@@ -602,7 +606,7 @@ body.lock{overflow:hidden}
 
 <!-- ================= 4. 생일 ================= -->
 <section class="panel" id="birthday" role="tabpanel">
-  <div class="sec-head"><h2>생일 · 식당 · 선물</h2><span>04 / 06</span></div>
+  <div class="sec-head"><h2>생일 · 식당 · 선물</h2><span>04 / 08</span></div>
 
   <div class="card">
     <div class="top"><h3 class="title">🍽 <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%8B%E8%B0%B7%E9%89%84%E6%9D%BF%E7%84%BC%E3%81%8D%20OKANOUE%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%821-17-7%20%E3%81%84%E3%81%A1%E3%81%AE%E3%83%93%E3%83%AB4F" target="_blank" rel="noopener" title="구글 지도에서 열기">渋谷鉄板焼き OKANOUE</a></h3><span class="pill green">예약 확정</span></div>
@@ -693,9 +697,400 @@ body.lock{overflow:hidden}
   </div>
 </section>
 
-<!-- ================= 5. 쇼핑·면세 ================= -->
+<!-- ================= 5. 카페 · 식당 ================= -->
+<section class="panel" id="food" role="tabpanel">
+  <div class="sec-head"><h2>카페 · 식당</h2><span>05 / 08</span></div>
+  <div class="chips" data-chips data-for="#foodList .fcard">
+    <button class="chipbtn on" data-f="all">전체</button>
+    <button class="chipbtn" data-f="meal">식사</button>
+    <button class="chipbtn" data-f="cafe">카페·모닝</button>
+    <button class="chipbtn" data-f="sweet">디저트·케이크</button>
+  </div>
+  <div id="foodList">
+  <div class="card fcard" data-f="meal">
+    <h3 class="title">🍽 식사 — 시부야·니혼바시·신주쿠</h3>
+    <p class="note" style="margin-top:2px">저장 목록 61곳과 인스타 11곳에서 확인된 식당·이자카야입니다. 괄호 안 숫자는 저장 당시 구글맵 평점.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%8B%E8%B0%B7%E9%89%84%E6%9D%BF%E7%84%BC%E3%81%8D%20OKANOUE%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%821-17-7%20%E3%81%84%E3%81%A1%E3%81%AE%E3%83%93%E3%83%AB4F" target="_blank" rel="noopener" title="구글 지도에서 열기">渋谷鉄板焼き OKANOUE</a></h4><span class="pill green">예약 확정</span></div>
+      <p class="meta">시부야 도겐자카 · 철판구이 · 1인 ¥11,000 코스(전복·안심·등심 9품) · 4.6 · 12/26 19:30 2명</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=MOHEJI%20%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B72-24-12%2012F" target="_blank" rel="noopener" title="구글 지도에서 열기">MOHEJI 渋谷スクランブルスクエア</a></h4><span class="pill gray">4.8</span></div>
+      <p class="meta">시부야 스크램블스퀘어 12F · 몬자야키 · ¥2,000~3,000 · 11:00–23:00 · <b>메모: 점심에 가야 함 (저녁은 테이블피)</b></p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E3%81%9F%E3%82%93%E3%81%AE%E6%AA%B8%E6%AA%AC%20%E6%B8%8B%E8%B0%B7%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">牛たんの檸檬 渋谷店</a></h4><span class="pill gray">4.7</span></div>
+      <p class="meta">시부야 · 규탄(소혀)·야키니쿠 · ¥3,000~4,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%88%E5%B3%B6%E3%82%82%E3%82%93%E3%81%98%E3%82%83%20%E3%81%8A%E3%81%93%E3%81%92%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">月島もんじゃ おこげ 渋谷</a></h4><span class="pill gray">4.9</span></div>
+      <p class="meta">시부야 · 몬자야키 · ¥2,000~3,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A4%E3%81%98%E5%8D%8A%20%E6%97%A5%E6%9C%AC%E6%A9%8B%E6%9C%AC%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B3-1-9" target="_blank" rel="noopener" title="구글 지도에서 열기">つじ半 日本橋本店</a></h4><span class="pill gray">4.4</span></div>
+      <p class="meta">니혼바시 · 해산물 돈부리 · ¥2,000~3,000 · 아크힐즈점 4.5도 저장</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E5%87%BA%E9%9B%B2%20%E6%96%B0%E5%AE%BF%20%E5%B1%85%E9%85%92%E5%B1%8B%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">出雲 新宿</a></h4><span class="pill gray">4.8</span></div>
+      <p class="meta">신주쿠 · 이자카야 · ¥2,000~3,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B1%8B%E6%AD%A6%E8%94%B5%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">麺屋武蔵</a></h4><span class="pill gray">3.9</span></div>
+      <p class="meta">라멘 · ¥1,000~2,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%83%B3%E9%85%92%E5%A0%B4UiUi%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">ワイン酒場UiUi</a></h4><span class="pill gray">3.7</span></div>
+      <p class="meta">모던 이자카야·와인 · ¥4,000~8,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=SUBA%20VS%20%E6%9D%B1%E4%BA%AC%20%E3%81%9D%E3%81%B0" target="_blank" rel="noopener" title="구글 지도에서 열기">SUBA VS</a></h4><span class="pill gray">4.1</span></div>
+      <p class="meta">소바 · ¥1,000~2,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Ebisu%20Stand%20Fuji%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">Ebisu Stand Fuji</a></h4><span class="pill gray">4.5</span></div>
+      <p class="meta">에비스 · 이자카야 · ¥2,000~3,000</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=FRESHNESS%20BURGER%20%E6%B8%8B%E8%B0%B7%E6%9D%B1%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">FRESHNESS BURGER 渋谷東店</a></h4><span class="pill gray">3.4</span></div>
+      <p class="meta">시부야 · 버거</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E4%BA%8C%E9%83%8E%20%E6%B1%A0%E8%A2%8B%E6%9D%B1%E5%8F%A3%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">ラーメン二郎 池袋東口店</a></h4><span class="pill gray">3.8</span></div>
+      <p class="meta">이케부쿠로 · 라멘</p>
+    </div>
+    <div class="item" data-f="meal">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%99%E3%81%97%E3%82%8F%E3%81%95%E3%81%B3%20%E3%83%A8%E3%83%89%E3%83%90%E3%82%B7Akiba%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E8%8A%B1%E5%B2%A1%E7%94%BA1-1" target="_blank" rel="noopener" title="구글 지도에서 열기">すしわさび ヨドバシAkiba店</a></h4><span class="pill gray">4.0</span></div>
+      <p class="meta">아키하바라 요도바시 8F · 초밥·텐푸라 · 11:00–23:00 · 이번 동선 밖</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card fcard" data-f="cafe">
+    <h3 class="title">☕ 도쿄 모닝세트 8곳</h3>
+    <p class="note" style="margin-top:2px">“도쿄에는 있고 서울에는 없는 모닝 세트”. 숙소에서 걸어갈 수 있는 지점 우선.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A4%E3%81%98%E7%94%B0%20%E6%97%A5%E6%9C%AC%E6%A9%8B%E4%BA%BA%E5%BD%A2%E7%94%BA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E4%BA%BA%E5%BD%A2%E7%94%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">つじ田 日本橋人形町</a></h4><span class="pill gray">650엔</span></div>
+      <p class="meta">아침 중화소바 · 매일 7:00–10:30</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA%E3%82%AB%E3%83%95%E3%82%A7%20Tsumugi%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E7%AF%89%E5%9C%B03-15-1" target="_blank" rel="noopener" title="구글 지도에서 열기">築地本願寺カフェ Tsumugi</a></h4><span class="pill gray">2,640엔</span></div>
+      <p class="meta">18품 아침밥 · 8:00–10:00</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%A1%E3%83%80%E7%8F%88%E7%90%B2%E5%BA%97%20%E6%B8%8B%E8%B0%B7%E5%AE%AE%E7%9B%8A%E5%9D%82%E4%B8%8A%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B71-14" target="_blank" rel="noopener" title="구글 지도에서 열기">コメダ珈琲店 渋谷宮益坂上店</a></h4><span class="pill gray">토스트 무료</span></div>
+      <p class="meta">음료 주문 시 모닝 세트 · ~11:00 · 시부야 미야마스자카우에</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Onigily%20Cafe%20%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AF%8C%E3%83%B6%E8%B0%B71-46" target="_blank" rel="noopener" title="구글 지도에서 열기">Onigily Cafe 代々木公園</a></h4><span class="pill gray">700엔~</span></div>
+      <p class="meta">오니기리 · 11:30까지</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%A2%E3%82%B9%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC%20%E6%B8%8B%E8%B0%B7%E9%81%93%E7%8E%84%E5%9D%82%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%822-29" target="_blank" rel="noopener" title="구글 지도에서 열기">モスバーガー 渋谷道玄坂店</a></h4><span class="pill gray">460엔~</span></div>
+      <p class="meta">아사모스 플레이트 · ~10:30</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%82%88%E3%81%84%E8%BB%92%20%E6%96%B0%E5%AE%BF%E9%9D%96%E5%9B%BD%E9%80%9A%E3%82%8A%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA1-6" target="_blank" rel="noopener" title="구글 지도에서 열기">やよい軒 新宿靖国通り店</a></h4><span class="pill gray">440엔~</span></div>
+      <p class="meta">아침 정식 · 신주쿠 야스쿠니도리</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E5%90%89%E9%87%8E%E5%AE%B6%20%E6%B8%8B%E8%B0%B7%E9%81%93%E7%8E%84%E5%9D%82%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%822-28" target="_blank" rel="noopener" title="구글 지도에서 열기">吉野家 渋谷道玄坂店</a></h4><span class="pill gray">567엔</span></div>
+      <p class="meta">햄에그 규 고바치 · 4:00–11:00</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E4%BB%A3%20%E5%AF%8C%E5%A3%AB%E3%81%9D%E3%81%B0%20%E6%B8%8B%E8%B0%B7%E6%9D%B1%E5%8F%A3%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B71-24" target="_blank" rel="noopener" title="구글 지도에서 열기">名代 富士そば 渋谷東口店</a></h4><span class="pill gray">470엔</span></div>
+      <p class="meta">아침 소바 · 5:00–10:00</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card fcard" data-f="cafe">
+    <h3 class="title">🥐 카페 · 베이커리</h3>
+    <p class="note" style="margin-top:2px">시부야·하라주쿠·오모테산도 반경 저장 카페.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=WHITE%20GLASS%20COFFEE%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">WHITE GLASS COFFEE</a></h4><span class="pill gray">4.2</span></div>
+      <p class="meta">시부야 · 카페 · ¥1,000~2,000</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Carry%20on%20Koffee%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">Carry on Koffee</a></h4><span class="pill gray">4.9</span></div>
+      <p class="meta">카페테리아 · ¥1,000~2,000</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Cassette%20Tape%20Cafe%20CASSE%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">Cassette Tape Cafe CASSE Shibuya</a></h4><span class="pill gray">4.7</span></div>
+      <p class="meta">시부야 · 카페 · ¥2,000~3,000</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%96%E3%83%AB%E3%83%BC%E3%83%9C%E3%83%88%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">ブルーボトルコーヒー 渋谷</a></h4><span class="pill gray">4.6</span></div>
+      <p class="meta">시부야 · 카페</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=neel%20%E7%A5%9E%E5%AE%AE%E5%89%8D%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D" target="_blank" rel="noopener" title="구글 지도에서 열기">neel 神宮前</a></h4><span class="pill gray">4.1</span></div>
+      <p class="meta">神宮前 · 카페</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=CAFE%20SECRET%20WINDOW%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">CAFE SECRET WINDOW</a></h4><span class="pill gray">4.7</span></div>
+      <p class="meta">카페</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%86%E3%82%B3%E3%83%8A%E3%83%99%E3%83%BC%E3%82%B0%E3%83%AB%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%20%E4%BB%A3%E3%80%85%E6%9C%A8%E4%B8%8A%E5%8E%9F%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">テコナベーグルワークス</a></h4><span class="pill gray">4.2</span></div>
+      <p class="meta">베이글 · 代々木上原</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=THE%20ROASTERY%20BY%20NOZY%20COFFEE%20%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D" target="_blank" rel="noopener" title="구글 지도에서 열기">THE ROASTERY BY NOZY COFFEE</a></h4><span class="pill gray">4.3</span></div>
+      <p class="meta">로스터리 · 原宿</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=CIBI%20corner%20store%20%E5%8C%97%E5%8F%82%E9%81%93%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">CIBI corner store 北参道</a></h4><span class="pill gray">4.2</span></div>
+      <p class="meta">잡화+카페 · 北参道</p>
+    </div>
+    <div class="item" data-f="cafe">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=nephew%20%E6%9D%B1%E4%BA%AC%20%E3%82%AB%E3%83%95%E3%82%A7" target="_blank" rel="noopener" title="구글 지도에서 열기">nephew</a></h4><span class="pill gray">3.9</span></div>
+      <p class="meta">카페</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card fcard" data-f="sweet">
+    <h3 class="title">🍰 디저트 · 케이크</h3>
+    <p class="note" style="margin-top:2px">12/26 수령 기준으로 비교한 시부야 초코·딸기초코 케이크 4종과 디저트 가게.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="sweet">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%B3%E3%83%AA%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%91%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A8%20%E6%B8%8B%E8%B0%B7%E3%83%92%E3%82%AB%E3%83%AA%E3%82%A8%20ShinQs%20B2F%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B72-21-1" target="_blank" rel="noopener" title="구글 지도에서 열기">アンリ・シャルパンティエ 渋谷ヒカリエ ShinQs B2F</a></h4><span class="pill gray">¥4,536</span></div>
+      <p class="meta">샹티 프레즈 쇼콜라 12cm(1순위) · 자 쇼콜라 케이크 15cm ¥3,888 · 웹 예약 12/23 17:00 마감 · 히카리에 도보 10분</p>
+    </div>
+    <div class="item" data-f="sweet">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%B4%E3%82%A3%E3%82%BF%E3%83%A1%E3%83%BC%E3%83%AB%20%E6%B8%8B%E8%B0%B7%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%821-12-1" target="_blank" rel="noopener" title="구글 지도에서 열기">ヴィタメール 渋谷マークシティ 1F</a></h4><span class="pill gray">¥3,456</span></div>
+      <p class="meta">쇼콜라 삼바 10.5cm · 2인에 맞는 크기 · 10:00–21:00 · 전화·매장만(03-3477-4804)</p>
+    </div>
+    <div class="item" data-f="sweet">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%80%E3%83%8F%E3%83%AB%E3%82%A2%E3%82%AA%E3%82%AD%20%E3%83%91%E3%83%AA%20%E6%B8%8B%E8%B0%B7%E3%83%92%E3%82%AB%E3%83%AA%E3%82%A8%20ShinQs%20B2F%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B72-21-1" target="_blank" rel="noopener" title="구글 지도에서 열기">サダハルアオキ パリ 渋谷ヒカリエ ShinQs B2F</a></h4><span class="pill gray">약 ¥2,600–3,200</span></div>
+      <p class="meta">쇼콜라 플랄랑 2P · 가장 진한 축 · 알코올 사용 · 전화 예약만(03-6434-1809)</p>
+    </div>
+    <div class="item" data-f="sweet">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D4-30-3%20%E6%9D%B1%E6%80%A5%E3%83%97%E3%83%A9%E3%82%B6%E8%A1%A8%E5%8F%82%E9%81%93%20%E3%82%AA%E3%83%A2%E3%82%AB%E3%83%89%203F" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわベーカリー</a></h4><span class="pill gray">4.7</span></div>
+      <p class="meta">하라주쿠 오모카도 3F · 11:00–20:00(막입장 19:30) · 15:00 이후 자유입장</p>
+    </div>
+    <div class="item" data-f="sweet">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%91%E3%83%B3%E3%83%BB%E3%83%A1%E3%82%BE%E3%83%B3%20%E9%8A%80%E5%BA%A7%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A7" target="_blank" rel="noopener" title="구글 지도에서 열기">パン・メゾン 銀座店</a></h4><span class="pill gray">4.3</span></div>
+      <p class="meta">긴자 · 제과점</p>
+    </div>
+    <div class="item" data-f="sweet">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%97%20%E5%8E%9F%E5%AE%BF%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-6" target="_blank" rel="noopener" title="구글 지도에서 열기">マリオンクレープ 原宿竹下通り店</a></h4><span class="pill gray">4.0</span></div>
+      <p class="meta">하라주쿠 · 크레페</p>
+    </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- ================= 6. 소품 · 편집샵 ================= -->
+<section class="panel" id="select" role="tabpanel">
+  <div class="sec-head"><h2>소품 · 편집샵</h2><span>06 / 08</span></div>
+  <div class="chips" data-chips data-for="#selectList .fcard">
+    <button class="chipbtn on" data-f="all">전체</button>
+    <button class="chipbtn" data-f="fashion">패션·편집</button>
+    <button class="chipbtn" data-f="eyewear">안경</button>
+    <button class="chipbtn" data-f="char">캐릭터·굿즈</button>
+    <button class="chipbtn" data-f="goods">소품·향</button>
+  </div>
+  <div id="selectList">
+  <div class="card fcard" data-f="fashion">
+    <h3 class="title">👕 패션 · 편집샵</h3>
+    <p class="note" style="margin-top:2px">BEAMS 계열과 시부야·하라주쿠 저장 셀렉트숍. 품번·재고는 11/18 매장 확인값.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=BEAMS%20%E3%83%A1%E3%83%B3%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%971-15-1" target="_blank" rel="noopener" title="구글 지도에서 열기">BEAMS MEN SHIBUYA</a></h4><span class="pill gray">4.5</span></div>
+      <p class="meta">神南1-15-1 1F·2F · 11:00–20:00 · 남성 캐주얼 메인</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=BEAMS%20PLUS%20%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D3-24-7" target="_blank" rel="noopener" title="구글 지도에서 열기">BEAMS PLUS 原宿</a></h4><span class="pill gray">선물 1순위</span></div>
+      <p class="meta">캐시미어 니트 38-15-0309-156 · 블랙 M 재고(11/18) · 홀드 7일 · ¥44,000</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=BEAMS%20JAPAN%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%821-2-3%20%E6%9D%B1%E6%80%A5%E3%83%97%E3%83%A9%E3%82%B6%E6%B8%8B%E8%B0%B7%202F" target="_blank" rel="noopener" title="구글 지도에서 열기">BEAMS JAPAN SHIBUYA</a></h4><span class="pill gray">11:00–20:00</span></div>
+      <p class="meta">도큐플라자 2F · 일본 공예·기념품</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=BEAMS%20%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D3-24-7" target="_blank" rel="noopener" title="구글 지도에서 열기">BEAMS Harajuku</a></h4><span class="pill gray">여성 라인</span></div>
+      <p class="meta">神宮前3-24-7 · 평일 12:00 / 주말 11:00–20:00</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=BEAMS%20%E9%8A%80%E5%BA%A7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A74-4-1" target="_blank" rel="noopener" title="구글 지도에서 열기">BEAMS GINZA</a></h4><span class="pill gray">11:00–20:00</span></div>
+      <p class="meta">銀座4-4-1 2F·3F · 긴자 동선에 포함</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=PORTER%20EXCHANGE%20%E6%B8%8B%E8%B0%B7PARCO%201F%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA15-1" target="_blank" rel="noopener" title="구글 지도에서 열기">PORTER EXCHANGE 渋谷PARCO</a></h4><span class="pill gray">선물 1순위</span></div>
+      <p class="meta">タンカー 3WAY 도큐먼트 백 622-26108 · 약 ¥101,200 · 블랙·아이언블루 재고(11/18) · 홀드 10일</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=SHIPS%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">SHIPS Shibuya</a></h4><span class="pill gray">4.1</span></div>
+      <p class="meta">의류</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=FREAK%27S%20STORE%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">FREAK'S STORE Shibuya</a></h4><span class="pill gray">4.2</span></div>
+      <p class="meta">의류</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=417%20EDIFICE%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">417 EDIFICE Shibuya</a></h4><span class="pill gray">4.4</span></div>
+      <p class="meta">의류</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=B%272nd%20%E7%A5%9E%E5%8D%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%97" target="_blank" rel="noopener" title="구글 지도에서 열기">B'2nd Jinnan</a></h4><span class="pill gray">4.1</span></div>
+      <p class="meta">의류 · 神南</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%A2%E3%83%B3%E3%83%99%E3%83%AB%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">mont-bell Shibuya</a></h4><span class="pill gray">4.0</span></div>
+      <p class="meta">아웃도어</p>
+    </div>
+    <div class="item" data-f="fashion">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%83%9F%E3%83%A4%E3%82%B7%E3%82%BF%E3%83%91%E3%83%BC%E3%82%AF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D1-20-10" target="_blank" rel="noopener" title="구글 지도에서 열기">ミヤシタパーク</a></h4><span class="pill gray">4.2</span></div>
+      <p class="meta">상점 11:00–21:00 · 하치코 동상에서 도보권</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card fcard" data-f="eyewear">
+    <h3 class="title">👓 안경</h3>
+    <p class="note" style="margin-top:2px">렌즈 가공이 4일~2주라 3박 안에 완성품은 어렵습니다. 프레임만 사고 렌즈는 한국에서 맞추는 쪽을 권합니다.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="eyewear">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=999.9%20%E3%83%95%E3%82%A9%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%B3%E3%82%BA%20%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%207F%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B72-24-12" target="_blank" rel="noopener" title="구글 지도에서 열기">999.9 (フォーナインズ)</a></h4><span class="pill gray">10:00–21:00</span></div>
+      <p class="meta">티타늄 프레임 · 렌즈 가공 4일~2주 · 3박 안에 완성 어려움</p>
+    </div>
+    <div class="item" data-f="eyewear">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E9%87%91%E5%AD%90%E7%9C%BC%E9%8F%A1%E5%BA%97%20%E6%B8%8B%E8%B0%B7PARCO%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA15-1" target="_blank" rel="noopener" title="구글 지도에서 열기">金子眼鏡店 渋谷PARCO</a></h4><span class="pill gray">11:00–21:00</span></div>
+      <p class="meta">시부야 PARCO 4F / 히카리에 3F / 긴자 6-8-4</p>
+    </div>
+    <div class="item" data-f="eyewear">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=EYEVAN%207285%20TOKYO%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B15-16-2" target="_blank" rel="noopener" title="구글 지도에서 열기">EYEVAN 7285 TOKYO</a></h4><span class="pill gray">11:00–20:00</span></div>
+      <p class="meta">南青山5-16-2 · 화요일 휴무 (12/25·26 이용 가능)</p>
+    </div>
+    <div class="item" data-f="eyewear">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=JINS%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA31-1" target="_blank" rel="noopener" title="구글 지도에서 열기">JINS 渋谷</a></h4><span class="pill gray">11:00–21:00</span></div>
+      <p class="meta">재고 있으면 당일 30분 완성 · 여행 중 바로 쓸 안경</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card fcard" data-f="char">
+    <h3 class="title">🎮 캐릭터 · 굿즈</h3>
+    <p class="note" style="margin-top:2px">점프숍·애니메이트·가샤폰의 백화점·치이카와 매장. 예약이 필요한 곳은 치이카와 파크입니다.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E6%B8%8B%E8%B0%B7PARCO%206F%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA15-1" target="_blank" rel="noopener" title="구글 지도에서 열기">ジャンプショップ 渋谷PARCO 6F</a></h4><span class="pill gray">10:00–21:00</span></div>
+      <p class="meta">헌터헌터 공식 굿즈 · 같은 층 포켓몬센터·닌텐도 도쿄 · 30~40분이면 충분</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E7%A5%9E%E4%BF%9D%E7%94%BA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E7%A5%9E%E4%BF%9D%E7%94%BA1-1%20%E4%B8%89%E7%9C%81%E5%A0%82%E6%9B%B8%E5%BA%97%204F" target="_blank" rel="noopener" title="구글 지도에서 열기">ジャンプショップ 神保町</a></h4><span class="pill gray">10:00–20:00</span></div>
+      <p class="meta">헌터헌터 오리지널 400종 이상 · 半蔵門線 13분(환승 0회, ¥209)</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%8B%E3%83%A1%E3%82%A4%E3%83%88%E6%B1%A0%E8%A2%8B%E6%9C%AC%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B1-20-7" target="_blank" rel="noopener" title="구글 지도에서 열기">アニメイト池袋本店</a></h4><span class="pill gray">10:00–21:00</span></div>
+      <p class="meta">B2~9F · 세 작품을 모두 취급하는 가장 확실한 곳</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%AC%E3%82%B7%E3%83%A3%E3%83%9D%E3%83%B3%E3%81%AE%E3%83%87%E3%83%91%E3%83%BC%E3%83%88%20%E6%B1%A0%E8%A2%8B%E7%B7%8F%E6%9C%AC%E5%BA%97%20%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B3-1" target="_blank" rel="noopener" title="구글 지도에서 열기">ガシャポンのデパート 池袋総本店</a></h4><span class="pill gray">3F</span></div>
+      <p class="meta">선샤인시티 3F 반다이 남코 크로스 스토어 · 옆 블록이 애니메이트 본점</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%83%91%E3%83%BC%E3%82%AF%20%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3%20%E3%82%A2%E3%83%8D%E3%83%83%E3%82%AF%E3%82%B9%20B1%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E6%9D%B1%E6%B1%A0%E8%A2%8B3-1" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわパーク 池袋</a></h4><span class="pill gray">예약 필수</span></div>
+      <p class="meta">10:00–19:00 · 날짜·시간 지정 티켓 · 12/26·27 매진, 12/24·25 잔여(11/17) · 어른 ¥3,500</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E5%8E%9F%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわらんど 原宿</a></h4><span class="pill gray">자유 입장</span></div>
+      <p class="meta">하라주쿠</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E6%96%B0%E5%AE%BF%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわらんど 新宿</a></h4><span class="pill gray">자유 입장</span></div>
+      <p class="meta">신주쿠</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E6%B1%A0%E8%A2%8BPARCO%20B2%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E5%8D%97%E6%B1%A0%E8%A2%8B1-28-2" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわらんど 池袋PARCO</a></h4><span class="pill gray">자유 입장</span></div>
+      <p class="meta">이케부쿠로 PARCO B2</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E6%9D%B1%E4%BA%AC%E9%A7%85%20B1%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%851-9-1" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわらんど 東京駅</a></h4><span class="pill gray">자유 입장</span></div>
+      <p class="meta">도쿄역 B1</p>
+    </div>
+    <div class="item" data-f="char">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%81%84%E3%81%8B%E3%82%8F%E3%82%89%E3%82%93%E3%81%A9%20%E3%82%BD%E3%83%A9%E3%83%9E%E3%83%81%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%8A%BC%E4%B8%8A1-1-2" target="_blank" rel="noopener" title="구글 지도에서 열기">ちいかわらんど ソラマチ</a></h4><span class="pill gray">자유 입장</span></div>
+      <p class="meta">도쿄 소라마치</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card fcard" data-f="goods">
+    <h3 class="title">🕯 소품 · 향 · 잡화</h3>
+    <p class="note" style="margin-top:2px">인스타 11개에서 저장한 소품·향·생활 잡화 매장.</p>
+    <div style="margin-top:12px">
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=PAMM%20%E6%B8%8B%E8%B0%B7PARCO%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA15-1" target="_blank" rel="noopener" title="구글 지도에서 열기">PAMM 渋谷PARCO店</a></h4><span class="pill gray">4.9</span></div>
+      <p class="meta">액세서리</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=LOST%20AND%20FOUND%20TOKYO%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">LOST AND FOUND TOKYO STORE</a></h4><span class="pill gray">4.1</span></div>
+      <p class="meta">잡화</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%82%B3%E3%83%A1%E3%83%A4%20%E3%83%88%E3%82%A6%E3%82%AD%E3%83%A7%E3%82%A6%20%E6%9D%B1%E6%80%A5%E3%83%97%E3%83%A9%E3%82%B6%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%821-2-3" target="_blank" rel="noopener" title="구글 지도에서 열기">アコメヤ トウキョウ 東急プラザ渋谷</a></h4><span class="pill gray">4.4</span></div>
+      <p class="meta">식기·식료 잡화</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=The%20Harvest%20Kitchen%20General%20Store%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">The Harvest Kitchen General Store</a></h4><span class="pill gray">4.2</span></div>
+      <p class="meta">주방용품</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=CONRAN%20SHOP%20%E6%96%B0%E5%AE%BF%E6%9C%AC%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">CONRAN SHOP 新宿本店</a></h4><span class="pill gray">—</span></div>
+      <p class="meta">소품·가구</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=P.F.S.%20PARTS%20CENTER%20%E6%81%B5%E6%AF%94%E5%AF%BF%E5%8D%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%81%B5%E6%AF%94%E5%AF%BF%E5%8D%971-18-9" target="_blank" rel="noopener" title="구글 지도에서 열기">P.F.S. PARTS CENTER</a></h4><span class="pill gray">—</span></div>
+      <p class="meta">소품·부품</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=SHIRO%20%E8%A1%A8%E5%8F%82%E9%81%93%E6%9C%AC%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D" target="_blank" rel="noopener" title="구글 지도에서 열기">SHIRO 表参道本店</a></h4><span class="pill gray">4.6</span></div>
+      <p class="meta">스킨케어·향</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=LUSH%20%E6%B8%8B%E8%B0%B7%E9%A7%85%E5%89%8D%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">LUSH 渋谷駅前店</a></h4><span class="pill gray">—</span></div>
+      <p class="meta">배스·바디</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=FUEGUIA%201833%20Ginza%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A7" target="_blank" rel="noopener" title="구글 지도에서 열기">FUEGUIA 1833 Ginza</a></h4><span class="pill gray">—</span></div>
+      <p class="meta">향수</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=ReFa%20%E6%B8%8B%E8%B0%B7%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener" title="구글 지도에서 열기">ReFa 渋谷</a></h4><span class="pill gray">4.3</span></div>
+      <p class="meta">미용용품</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E6%B2%BB%E3%82%BF%E3%82%AA%E3%83%AB%20%E5%8D%97%E9%9D%92%E5%B1%B1%E5%BA%97%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B1" target="_blank" rel="noopener" title="구글 지도에서 열기">今治タオル 南青山店</a></h4><span class="pill gray">4.4</span></div>
+      <p class="meta">타월·리넨</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Tabio%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener" title="구글 지도에서 열기">Tabio</a></h4><span class="pill gray">3.9</span></div>
+      <p class="meta">양말</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%AB%E3%83%87%E3%82%A3%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%20%E6%B8%8B%E8%B0%B7%E6%9D%B1%E6%80%A5%E3%83%95%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E9%81%93%E7%8E%84%E5%9D%822-24-1" target="_blank" rel="noopener" title="구글 지도에서 열기">カルディコーヒーファーム 渋谷東急フードショー</a></h4><span class="pill gray">3.8</span></div>
+      <p class="meta">식료·커피</p>
+    </div>
+    <div class="item" data-f="goods">
+      <div class="top"><h4><a class="gmap" href="https://www.google.com/maps/search/?api=1&query=TAYORI%20%E8%B0%B7%E4%B8%AD%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E8%B0%B7%E4%B8%AD" target="_blank" rel="noopener" title="구글 지도에서 열기">TAYORI 谷中</a></h4><span class="pill gray">—</span></div>
+      <p class="meta">편집숍 · 야나카 동선</p>
+    </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- ================= 7. 쇼핑·면세 ================= -->
 <section class="panel" id="shopping" role="tabpanel">
-  <div class="sec-head"><h2>쇼핑 · 면세</h2><span>05 / 06</span></div>
+  <div class="sec-head"><h2>쇼핑 · 면세</h2><span>07 / 08</span></div>
 
   <div class="card">
     <h3 class="title">BEAMS — 남편 선물 1순위</h3>
@@ -811,9 +1206,9 @@ body.lock{overflow:hidden}
   </div>
 </section>
 
-<!-- ================= 6. 러닝·스팟 ================= -->
+<!-- ================= 8. 러닝·스팟 ================= -->
 <section class="panel" id="spots" role="tabpanel">
-  <div class="sec-head"><h2>러닝 · 스팟</h2><span>06 / 06</span></div>
+  <div class="sec-head"><h2>러닝 · 스팟</h2><span>08 / 08</span></div>
 
   <div class="card">
     <h3 class="title">🏃 러닝 코스 3개</h3>
@@ -961,7 +1356,7 @@ body.lock{overflow:hidden}
 
 <footer>
   <div class="wrap">
-    도쿄 트래블 키트 · 2026.12.24–27 — 남아 있는 여행 기록에서 확인된 내용만 담았습니다. 정리 기준 2026-11-17, 화면 갱신 2026-11-23.<br>
+    도쿄 트래블 키트 · 2026.12.24–27 — 남아 있는 여행 기록에서 확인된 내용만 담았습니다. 정리 기준 2026-11-17, 화면 갱신 2026-11-24.<br>
     항공편명·좌석, 숙소 요금, 12/24 저녁 식당, 도쿄타워·N'EX 예매는 아직 기록이 없습니다. 사진과 지도는 파일에 직접 넣어 두어 인터넷 없이도 열립니다.
   </div>
 </footer>
