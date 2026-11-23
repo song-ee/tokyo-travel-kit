@@ -220,10 +220,11 @@ body.lock{overflow:hidden}
 
 /* ---------- slider ---------- */
 .slider{margin-top:12px}
-.slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:20px}
+.slides{display:flex;align-items:flex-start;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:20px;transition:height .32s ease}
 .slides::-webkit-scrollbar{display:none}
 .slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding-right:2px}
 .slide .map{margin-top:0}
+.slide .map img{width:100%;height:auto;max-height:64vh;object-fit:contain;background:rgba(255,255,255,.7)}
 .slider-ctrl{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px}
 .nav-btn{width:40px;height:40px;border:0;border-radius:14px;background:rgba(255,255,255,.8);color:var(--ink);font-size:15px;
   box-shadow:var(--shadow-sm);cursor:pointer;transition:transform .15s,background .2s}
@@ -1033,17 +1034,29 @@ body.lock{overflow:hidden}
       var i = Math.min(n - 1, Math.max(0, current()));
       dots.forEach(function(d, k){ d.classList.toggle('on', k === i); });
     }
-    track.addEventListener('scroll', function(){ window.requestAnimationFrame(syncDots); }, { passive: true });
+    var slides = Array.prototype.slice.call(track.children);
+    function fitHeight(){
+      var i = Math.min(n - 1, Math.max(0, current()));
+      if(slides[i]) track.style.height = slides[i].offsetHeight + 'px';
+    }
+    track.addEventListener('scroll', function(){ window.requestAnimationFrame(function(){ syncDots(); fitHeight(); }); }, { passive: true });
     dots.forEach(function(d, k){
-      d.addEventListener('click', function(){ track.scrollTo({ left: k * track.clientWidth, behavior: 'smooth' }); });
+      d.addEventListener('click', function(){
+        track.scrollTo({ left: k * track.clientWidth, behavior: 'smooth' });
+        if(slides[k]) track.style.height = slides[k].offsetHeight + 'px';
+      });
     });
     sl.querySelectorAll('.nav-btn').forEach(function(b){
       b.addEventListener('click', function(){
         var i = Math.min(n - 1, Math.max(0, current() + Number(b.dataset.dir)));
         track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+        if(slides[i]) track.style.height = slides[i].offsetHeight + 'px';
       });
     });
-    window.addEventListener('resize', syncDots);
+    function relayout(){ fitHeight(); syncDots(); }
+    window.addEventListener('resize', relayout);
+    window.addEventListener('load', relayout);
+    setTimeout(relayout, 120);
   });
 
   /* ---------- checklist ---------- */
