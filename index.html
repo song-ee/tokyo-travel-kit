@@ -220,7 +220,7 @@ body.lock{overflow:hidden}
 
 /* ---------- slider ---------- */
 .slider{margin-top:12px}
-.slides{display:flex;align-items:flex-start;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:20px;transition:height .32s ease}
+.slides{display:flex;align-items:flex-start;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;scrollbar-width:none;border-radius:20px;transition:height .32s ease}
 .slides::-webkit-scrollbar{display:none}
 .slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding-right:2px}
 .slide .map{margin-top:0}
@@ -1039,7 +1039,12 @@ body.lock{overflow:hidden}
       var i = Math.min(n - 1, Math.max(0, current()));
       if(slides[i]) track.style.height = slides[i].offsetHeight + 'px';
     }
-    track.addEventListener('scroll', function(){ window.requestAnimationFrame(function(){ syncDots(); fitHeight(); }); }, { passive: true });
+    var idle;
+    track.addEventListener('scroll', function(){
+      window.requestAnimationFrame(syncDots);
+      clearTimeout(idle);
+      idle = setTimeout(fitHeight, 160);
+    }, { passive: true });
     dots.forEach(function(d, k){
       d.addEventListener('click', function(){
         track.scrollTo({ left: k * track.clientWidth, behavior: 'smooth' });
