@@ -479,7 +479,7 @@ body.lock{overflow:hidden}
 .ca-pick.on{background:var(--blue);color:#fff;box-shadow:0 14px 24px -20px rgba(36,86,230,.95)}
 .ca-form{display:flex;flex-direction:column;gap:9px;border-top:1px solid rgba(27,27,31,.075);padding-top:14px}
 .ca-row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px}
-.ca-row.wide{grid-template-columns:92px minmax(0,1fr)}
+.ca-row.wide{grid-template-columns:118px minmax(0,1fr)}
 .ca-field{display:flex;flex-direction:column;gap:4px;min-width:0}
 .ca-field > span{font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--sub)}
 .ca-field input{width:100%;font:inherit;font-size:13.5px;color:var(--ink);background:rgba(255,255,255,.88);border:0;border-radius:11px;
@@ -513,7 +513,7 @@ body.lock{overflow:hidden}
   .tl .d{padding-left:34px}
   .tl .d .emo{width:27px;height:27px;font-size:13.5px;border-radius:10px}
   .motion-title{font-size:14.5px}
-  .ca-row.wide{grid-template-columns:84px minmax(0,1fr)}
+  .ca-row.wide{grid-template-columns:106px minmax(0,1fr)}
 }
 </style>
 </head>
@@ -2371,7 +2371,15 @@ var Kit = (function(){
   /* ---- 모션 코스 ---- */
   var motionDay = 1;
   function shortTitle(t){
-    return t.replace(/\([^)]*\)/g, '').replace(/→/g, '·').replace(/[·]{2,}/g, '·').replace(/\s+/g, ' ').trim().slice(0, 16);
+    var full = t.replace(/\([^)]*\)/g, '').replace(/→/g, ' · ').replace(/\s+/g, ' ').trim();
+    var parts = full.split(' '), out = '';
+    for (var i = 0; i < parts.length; i++) {
+      var next = out ? out + ' ' + parts[i] : parts[i];
+      if (next.length > 17 && out) break;
+      out = next;
+    }
+    out = out.replace(/[·:\-–]+$/, '').trim();
+    return out || full.slice(0, 14);
   }
   function renderMotion(day){
     var track = document.getElementById('motionTrack');
